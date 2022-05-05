@@ -29,10 +29,10 @@ define( 'DB_USER', 'wordpress' );
 define( 'DB_PASSWORD', 'wordpress' );
 
 /** Database hostname */
-define( 'DB_HOST', '172.22.0.1:3306' );
+define( 'DB_HOST', 'db:3306' );
 
 /** Database charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8mb4' );
+define( 'DB_CHARSET', 'utf8' );
 
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
@@ -48,14 +48,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'v5/C.W8ro#/PV#1A(bH5=8hfu9{W|.0j-&<fm7KMJd|@85w31lQSi8{.$ $Mjsc6' );
-define( 'SECURE_AUTH_KEY',  'G#f a$_C-9hlvD@rnY%ap45V}gdZ}51`0RQ3lgaQy<oaOpYVFhSWDy0z^]^<aZn5' );
-define( 'LOGGED_IN_KEY',    '-_ykb=`eW`(%;Dmx[pnJWb68gJD-y>6QRn:kL@xJXO!vr6F^^7sZk<pD%)VbFh0A' );
-define( 'NONCE_KEY',        'nI!M4wW_^oUhsIR.~wfeXWJC3MPt~Tt,pOkXU$PLrR>oPY<DCgy-91!<^74;|hFK' );
-define( 'AUTH_SALT',        'y`n-VlU@0CzvKCF@0),2%apHMWAQ*Kch}DTz;[ -S+0A ILjReuQW~C=8Q:H{043' );
-define( 'SECURE_AUTH_SALT', 'WyHOi2<+jUbZL=,G7pHWfyV^OjP#!m/Ynplp3)U!$q;ZqXE2^PO6Vz+eOvw`#lmu' );
-define( 'LOGGED_IN_SALT',   'Q6B nE{G^-CAwN3KH_^b^)~tkZ6xvLKCA%k(Eo{m?hHH+i;bvH7N)B{vU^_E $M?' );
-define( 'NONCE_SALT',       'X]DjIj<-+!!DO:3xdO+$mUa9:Ouw.u$Y%{f}%9H)8)@}-_3rw=Lb~&5hBw-|E) &' );
+define( 'AUTH_KEY',         'put your unique phrase here' );
+define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
+define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
+define( 'NONCE_KEY',        'put your unique phrase here' );
+define( 'AUTH_SALT',        'put your unique phrase here' );
+define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
+define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
+define( 'NONCE_SALT',       'put your unique phrase here' );
 
 /**#@-*/
 
@@ -83,7 +83,7 @@ define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
-
+define( 'UPLOADS','wp-content/uploads');
 
 /* That's all, stop editing! Happy publishing. */
 
