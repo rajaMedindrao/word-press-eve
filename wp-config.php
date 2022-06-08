@@ -18,6 +18,20 @@
  * @package WordPress
  */
 
+
+// production_server is where wp-admin is accessible
+$public_url         = 'http://localhost:8001';
+$production_server     = 'http://localhost:8001';
+
+// Settings for 
+$_SERVER['HTTP_HOST'] = $_SERVER['HTTP_X_FORWARDED_HOST'];
+$_SERVER['REQUEST_URI'] = str_replace("wordpress", "home",$_SERVER['REQUEST_URI']);
+
+// Use this if WP app is present behind a reverse proxy
+define( 'WP_SITEURL', "$production_server" );
+define( 'WP_HOME', $public_url );   
+
+
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define( 'DB_NAME', 'wordpress' );
@@ -32,7 +46,7 @@ define( 'DB_PASSWORD', 'wordpress' );
 define( 'DB_HOST', 'db:3306' );
 
 /** Database charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8' );
+define( 'DB_CHARSET', 'utf8mb4' );
 
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
@@ -48,14 +62,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'put your unique phrase here' );
-define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
-define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
-define( 'NONCE_KEY',        'put your unique phrase here' );
-define( 'AUTH_SALT',        'put your unique phrase here' );
-define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
-define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
-define( 'NONCE_SALT',       'put your unique phrase here' );
+define( 'AUTH_KEY',         ',R9u<JD+nr::Xa(K/>13nubmc+Bq|x|Ru$hd^#ufuC?h21R|Qbeycr0I3[dWgiR+' );
+define( 'SECURE_AUTH_KEY',  '-G0<)}O-t01}<@/[Caclk,zH3y$9sL)1-L2k4~%YO?q|P?9z+X%tF}TXomw5)BVT' );
+define( 'LOGGED_IN_KEY',    'Dnp3DEg-iRW`GSad[Dp%FURpA7cm3I/MDLT444%gtSga&8]l6]:2o46IPHL^KpmK' );
+define( 'NONCE_KEY',        ')&?<hb]}Qy7<LxO1k4u>o9V?O3X/yLeo{qh}lHd1QvY1|*rf7EC2%?r^_rCo [.e' );
+define( 'AUTH_SALT',        'fJG[[MiLs{Dz]}dm;]%y9=ybj[QSi%z9z>1trt1q!KuD!U$|OLfxO-t_W9vKYlQ+' );
+define( 'SECURE_AUTH_SALT', '$mtv$~5qcI5e_kCV%~A~?!Tm)z|1(6)fbvaQHiHU!<?zp4/V^orshbY3LSF3uOHZ' );
+define( 'LOGGED_IN_SALT',   'vrSz~xwFy]w|Y;l4Elb02zFO8g0zagX-*RGO!pUVkIQj4yG|wM<geO_bMKr4h{97' );
+define( 'NONCE_SALT',       'k:8aWkjAJb./A-im>[{vFH{20MW|#fhL)1@q8IVO:y1$~R{VTal4oG2Z v:Q+7of' );
 
 /**#@-*/
 
@@ -83,7 +97,7 @@ define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
-define( 'UPLOADS','wp-content/uploads');
+
 
 /* That's all, stop editing! Happy publishing. */
 
