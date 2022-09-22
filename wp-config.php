@@ -5,15 +5,15 @@
 
 
 // production_server is where wp-admin is accessible
-$public_url         = 'http://localhost:8001';
-$production_server     = 'http://localhost:8001';
+$public_url         = 'https://wp-app.testing-o-f5-dxc.eve.dev/';
+$production_server     = 'https://wp-app.testing-o-f5-dxc.eve.dev/';
 
 // Settings for 
 $_SERVER['HTTP_HOST'] = $_SERVER['HTTP_X_FORWARDED_HOST'];
 $_SERVER['REQUEST_URI'] = str_replace("wordpress", "home",$_SERVER['REQUEST_URI']);
 
 // Use this if WP app is present behind a reverse proxy
-define( 'WP_SITEURL', "$production_server" );
+define( 'WP_SITEURL', $production_server );
 define( 'WP_HOME', $public_url );   
 
 
@@ -22,13 +22,13 @@ define( 'WP_HOME', $public_url );
 define( 'DB_NAME', 'wordpress' );
 
 /** Database username */
-define( 'DB_USER', 'wordpress' );
+define( 'DB_USER', 'wordpress1' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'wordpress' );
+define( 'DB_PASSWORD', 'wordpress1234' );
 
 /** Database hostname */
-define( 'DB_HOST', 'db:3306' );
+define( 'DB_HOST', '34.123.153.252:3306' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
@@ -64,7 +64,7 @@ define( 'NONCE_SALT',       'k:8aWkjAJb./A-im>[{vFH{20MW|#fhL)1@q8IVO:y1$~R{VTal
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix = 'wp_';
+$table_prefix = 'wp_new_';
 
 /**
  * For developers: WordPress debugging mode.
