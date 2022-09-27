@@ -5,8 +5,8 @@
 
 
 // production_server is where wp-admin is accessible
-$public_url         = 'https://wp-app.testing-o-f5-dxc.eve.dev/';
-$production_server     = 'https://wp-app.testing-o-f5-dxc.eve.dev/';
+$public_url         = 'https://wp-app-ns-development-o-f5.eve.dev/';
+$production_server     = 'https://wp-app-ns-development-o-f5.eve.dev/';
 
 // Settings for 
 $_SERVER['HTTP_HOST'] = $_SERVER['HTTP_X_FORWARDED_HOST'];
