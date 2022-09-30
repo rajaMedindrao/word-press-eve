@@ -4,7 +4,7 @@
  */
 
 
-// production_server is where wp-admin is accessible
+// production_server is where wp-admin is accessible. Please change the public_url and production_url to where u want to deploy your application.
 $public_url         = 'https://wp-app-ns-development-o-f5.eve.dev/';
 $production_server     = 'https://wp-app-ns-development-o-f5.eve.dev/';
 
