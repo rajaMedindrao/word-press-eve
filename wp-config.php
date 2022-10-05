@@ -4,7 +4,7 @@
  */
 
 
-// production_server is where wp-admin is accessible. Please change the public_url and production_url to where u want to deploy your application.
+// production_server is where wp-admin is accessible
 $public_url         = 'http://localhost:8001';
 $production_server     = 'http://localhost:8001';
 
@@ -14,7 +14,7 @@ $_SERVER['REQUEST_URI'] = str_replace("wordpress", "home",$_SERVER['REQUEST_URI'
 
 // Use this if WP app is present behind a reverse proxy
 define( 'WP_SITEURL', $production_server );
-define( 'WP_HOME', $public_url );   
+define( 'WP_HOME', $public_url );    
 
 
 // ** Database settings - You can get this info from your web host ** //
@@ -64,7 +64,7 @@ define( 'NONCE_SALT',       'k:8aWkjAJb./A-im>[{vFH{20MW|#fhL)1@q8IVO:y1$~R{VTal
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix = 'wp_localui_';
+$table_prefix = 'wp_';
 
 /**
  * For developers: WordPress debugging mode.
