@@ -5,8 +5,8 @@
 
 
 // production_server is where wp-admin is accessible. Please change the public_url and production_url to where u want to deploy your application.
-$public_url         = 'http://localhost:8001';
-$production_server     = 'http://localhost:8001';
+$public_url         = 'http://localhost:80';
+$production_server     = 'http://localhost:80';
 
 // Settings for 
 $_SERVER['HTTP_HOST'] = $_SERVER['HTTP_X_FORWARDED_HOST'];
