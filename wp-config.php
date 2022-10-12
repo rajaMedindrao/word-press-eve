@@ -5,8 +5,8 @@
 
 
 // production_server is where wp-admin is accessible. Please change the public_url and production_url to where u want to deploy your application.
-$public_url         = 'https://wp-app-ns-development-o-f5.f5eve.com/';
-$production_server     = 'https://wp-app-ns-development-o-f5.f5eve.com/';
+$public_url         = 'https://b3fcc601-ec6a-452b-84e3-1a1a5dafe36e.eve.dev/';
+$production_server     = 'https://b3fcc601-ec6a-452b-84e3-1a1a5dafe36e.eve.dev/';
 
 // Settings for 
 $_SERVER['HTTP_HOST'] = $_SERVER['HTTP_X_FORWARDED_HOST'];
@@ -64,7 +64,7 @@ define( 'NONCE_SALT',       'k:8aWkjAJb./A-im>[{vFH{20MW|#fhL)1@q8IVO:y1$~R{VTal
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix = 'wp_';
+$table_prefix = 'wpnew_';
 
 /**
  * For developers: WordPress debugging mode.
