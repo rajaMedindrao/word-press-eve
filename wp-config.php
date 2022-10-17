@@ -5,8 +5,8 @@
 
 
 // production_server is where wp-admin is accessible. Please change the public_url and production_url to where u want to deploy your application.
-$public_url         = 'https://9f4f9db5-2969-4fd9-866c-e1099a5fc52a.eve.dev/';
-$production_server     = 'https://9f4f9db5-2969-4fd9-866c-e1099a5fc52a.eve.dev/';
+$public_url         =  $_ENV["WP_URL"];
+$production_server     =  $_ENV["WP_URL"];
 
 // Settings for 
 $_SERVER['HTTP_HOST'] = $_SERVER['HTTP_X_FORWARDED_HOST'];
